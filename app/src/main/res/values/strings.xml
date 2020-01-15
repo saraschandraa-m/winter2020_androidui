@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AndroidUI</string>
+
+    <string name="random_key">Random Text</string>
+
+    <string name="company_name">Appstone</string>
+</resources>

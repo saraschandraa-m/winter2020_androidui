@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv_setupplan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Setup your Plan"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/tv_changemode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:text="You can change the mode anytime in the settings"
+        android:textSize="18sp"
+        android:layout_below="@+id/tv_setupplan"
+        />
+
+
+    <RelativeLayout
+        android:layout_below="@+id/tv_changemode"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/gradient_1"
+        android:layout_height="150dp">
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/pie_chart_img"/>
+
+
+        <TextView
+            android:id="@+id/tv_setupwizard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Setup Wizard"
+            android:textColor="#ffffff"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="10dp"
+            android:textSize="24sp"/>
+
+        <View
+            android:id="@+id/vw_1"
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:layout_below="@+id/tv_setupwizard"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RECOMMENDED"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/vw_1"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
