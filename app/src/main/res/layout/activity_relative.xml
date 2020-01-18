@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
 
     <TextView
@@ -28,13 +32,14 @@
 
 
     <RelativeLayout
+        android:id="@+id/rl_layout1"
         android:layout_below="@+id/tv_changemode"
         android:layout_width="match_parent"
         android:layout_marginTop="10dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/gradient_1"
-        android:layout_height="150dp">
+        android:layout_height="200dp">
 
 
         <ImageView
@@ -76,5 +81,107 @@
 
     </RelativeLayout>
 
+    <RelativeLayout
+        android:id="@+id/rl_layout2"
+        android:layout_below="@+id/rl_layout1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/gradient_1"
+        android:layout_height="200dp">
 
-</RelativeLayout>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/pie_chart_img"/>
+
+
+        <TextView
+            android:id="@+id/tv_setupwizard1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Setup Wizard"
+            android:textColor="#ffffff"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="10dp"
+            android:textSize="24sp"/>
+
+        <View
+            android:id="@+id/vw_2"
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:layout_below="@+id/tv_setupwizard1"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RECOMMENDED"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/vw_2"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_layout3"
+        android:layout_below="@+id/rl_layout2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/gradient_1"
+        android:layout_height="200dp">
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/pie_chart_img"/>
+
+
+        <TextView
+            android:id="@+id/tv_setupwizard2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Setup Wizard"
+            android:textColor="#ffffff"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="10dp"
+            android:textSize="24sp"/>
+
+        <View
+            android:id="@+id/vw_3"
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:layout_below="@+id/tv_setupwizard2"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RECOMMENDED"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/vw_3"/>
+
+    </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</ScrollView>
